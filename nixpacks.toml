@@ -1,8 +1,14 @@
+[variables]
+NPM_CONFIG_NODE_GYP = "/usr/bin/node-gyp"
+
 [phases.setup]
-nixPkgs = ["bun", "nodejs", "python3", "gcc", "gnumake"]
+nixPkgs = ["bun", "nodejs", "python3", "gcc", "gnumake", "nodePackages.node-gyp"]
 
 [phases.install]
-cmds = ["npm install -g node-gyp", "bun install --frozen-lockfile"]
+cmds = [
+  "which node-gyp",
+  "bun install --frozen-lockfile"
+]
 
 [start]
 cmd = "bun run dev"
