@@ -138,7 +138,7 @@
     "solid-js@1.9.10": "patches/solid-js@1.9.10.patch"
   },
   "version": "1.0.0",
-  "main": "index.js",
+  
   "keywords": [],
   "author": "",
   "bugs": {
