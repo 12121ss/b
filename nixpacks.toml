@@ -1,5 +1,8 @@
 [phases.setup]
 nixPkgs = ["bun", "nodejs", "python3", "gcc", "gnumake"]
 
+[phases.install]
+cmds = ["npm install -g node-gyp", "bun install --frozen-lockfile"]
+
 [start]
 cmd = "bun run dev"
