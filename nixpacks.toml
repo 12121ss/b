@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["bun"]
+nixPkgs = ["bun", "nodejs", "python3", "gcc", "gnumake"]
 
 [start]
 cmd = "bun run dev"
